@@ -34,6 +34,7 @@ function main(){
 	});
 
 	document.getElementById("btn1").addEventListener("click",function(){
+		myLog("fetchTest")
 		fetch("./datas/data.json")
 		.then(function(res){
             return res.text();
