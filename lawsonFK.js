@@ -1,3 +1,4 @@
+
 const dbName = "campaignDatas";
 
 
@@ -30,6 +31,16 @@ function main(){
 	searchTextBox.addEventListener("input",function(){
 		myLog("inputやで");
 
+	});
+
+	document.getElementById("btn1").addEventListener("click",function(){
+		fetch("./datas/data.json")
+		.then(function(res){
+            return res.text();
+        })
+        .then(function(res){
+			myLog(res);
+		})
 	});
 
 }
