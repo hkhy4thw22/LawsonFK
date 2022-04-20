@@ -12,6 +12,23 @@ openReq.onsuccess = function(event){
 
 }
 
+// fetch("./datas/data.json")
+// .then(function(res){
+// 	return res.text();
+// })
+// .then(function(res){
+// 	const merchandiseObj = JSON.parse(res);
+// 	const openReq2 = indexedDB.open(dbName);
+// 	openReq2.onsuccess = function(event){
+// 		const db = event.target.result;
+// 		const transaction = db.transaction("merchandise", "readwrite");
+// 		const store = transaction.objectStore("merchandise");
+// 		for(let i = 0 ; i < merchandiseObj.length ; i++){
+// 			store.add(merchandiseObj[i]);
+// 		}
+// 	}
+// })
+
 
 
 
@@ -34,7 +51,7 @@ function main(){
 	});
 
 	document.getElementById("btn1").addEventListener("click",function(){
-		myLog("fetchTestdesu")
+		myLog("fetchTest22")
 		fetch("./datas/data.json")
 		.then(function(res){
             return res.text();
