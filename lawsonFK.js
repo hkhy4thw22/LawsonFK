@@ -34,7 +34,7 @@ function main(){
 	});
 
 	document.getElementById("btn1").addEventListener("click",function(){
-		myLog("fetchTest")
+		myLog("fetchTestdesu")
 		fetch("./datas/data.json")
 		.then(function(res){
             return res.text();
@@ -49,6 +49,7 @@ function main(){
 
 function myLog(str){
 	document.getElementById("myLogArea").innerHTML += "<br>"+str;
+	console.log(str);
 }
 
 
